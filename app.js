@@ -1,8 +1,9 @@
 window.onload = function() {
     let t1 = new TimelineMax()
     TweenMax.set('body', {opacity: 1})
+    TweenMax.set('.shoe-title', {opacity: 1})
     t1
-        .from('.navbar', 0.7, {opacity: 0, y: -50})
+        .from('.navbar', 0.7, {opacity: 0, y: -50, delay: 0.5})
         .from('.line2', 0.5, {height: 0})
         .from('.line1', 0.5, {height: 0}, '-=0.5')
         .from('.swiper-container', 0.5, {opacity: 0, y: -100}, '-=0.5')
