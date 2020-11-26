@@ -10,6 +10,7 @@ font-family: 'Squada One', cursive; */
 }
 body {
   opacity: 0;
+  background-color: #333333;
 }
 .home {
   background-color: #333333;
@@ -213,6 +214,7 @@ li {
 
 .shoe-title {
   transition: 0.3s;
+  opacity: 0;
 }
 
 .wrapper-strip {
@@ -243,13 +245,15 @@ li {
 .strip ul {
   display: flex;
   color: #333333;
-  font-weight: bold;
+  justify-content: center;
+  padding-left: 90px;
   font-family: "Poppins", sans-serif;
   flex-direction: column;
 }
 
 .strip li {
   padding-bottom: 16px;
+  text-align: left;
   cursor: pointer;
 }
 
