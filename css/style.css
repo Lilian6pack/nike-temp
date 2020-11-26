@@ -1,0 +1,274 @@
+/*font-family: 'Anton', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Squada One', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+body {
+  opacity: 0;
+}
+.home {
+  background-color: #333333;
+  height: 100vh;
+  width: 100%;
+  padding: 26px;
+}
+
+nav {
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  font-family: "Squada One", cursive;
+  color: white;
+  font-size: 26px;
+  padding-right: 38px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding-right: 50px;
+}
+
+.middle-content {
+  font-family: "Poppins", sans-serif;
+  padding: 26px 26px 0px 26px;
+  display: flex;
+}
+.line1 {
+  height: 200px;
+  transform: rotate(0deg);
+  width: 1px;
+  opacity: 0.3;
+  background-color: lightgray;
+  margin-bottom: 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.lines {
+  width: 40px;
+  margin-top: 4px;
+  height: 2px;
+  background-color: white;
+
+  border-radius: 8px;
+}
+
+.line2 {
+  height: 200px;
+  width: 1px;
+  opacity: 0.3;
+  margin-top: 30px;
+  background-color: lightgray;
+}
+
+.middle {
+  color: white;
+  width: 100%;
+}
+.swiper-container {
+  width: 80%;
+  height: 80%;
+  cursor: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  position: absolute;
+  font-weight: 600;
+  color: white;
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+.shoes-name {
+  display: flex;
+  align-items: center;
+}
+.shoes-name p {
+  padding-left: 10px;
+}
+.plus {
+  position: absolute;
+  font-weight: 600;
+  color: white;
+  top: 80%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 80px;
+}
+
+.plus p {
+  animation: plus 3s infinite ease;
+}
+
+@keyframes plus {
+  0% {
+    text-shadow: 0px 0px 0px lightblue;
+  }
+  50% {
+    text-shadow: 1px 1px 5px lightblue;
+  }
+  100% {
+    text-shadow: 0px 0px 0px lightblue;
+  }
+}
+
+.trait {
+  content: "";
+  height: 2px;
+  width: 40px;
+  padding: 1px;
+  background-color: white;
+  margin-left: 70px;
+}
+
+.bottom {
+  position: relative;
+  bottom: 4%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 135px;
+  font-family: "Anton", sans-serif;
+}
+
+.text p {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.active:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  color: white;
+  transition: 1s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cursor {
+  position: fixed;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  user-select: none;
+  transition: visibility 0.3s, opacity 0.3s linear;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.cursor p {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shoe-title {
+  transition: 0.3s;
+}
+
+.wrapper-strip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.strip {
+  width: 20%;
+  background-color: #fff;
+  position: relative;
+  height: 420px;
+  left: 0;
+  bottom: -420px;
+  text-align: center;
+}
+
+.brand {
+  font-size: 100px;
+  font-family: "Anton", sans-serif;
+}
+
+.strip ul {
+  display: flex;
+  color: #333333;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+
+.strip li {
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+
+.fa-times {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  top: 20px;
+  right: 20px;
+}
+
+.list {
+  padding-top: 150px;
+}
+
+.jordanli {
+  display: none;
+}
+
+.adidasli {
+  display: none;
+}
